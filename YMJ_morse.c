@@ -7,12 +7,15 @@ void mose(char input) {
 
 	if (input >= 65 && input < 97) {
 		index = input - 65; //대문자
+		printf("%s", mose[index]);
 	}
-	else if (input >= 97) {
+	else if (input >= 97 && input < 123) {
 		index = input - 97; //소문자
+		printf("%s", mose[index]);
 	}
-
-	printf("%s", mose[index]);
+	else {
+		printf("알파벳을 입력하세요");
+	}
 }
 
 void main() {
